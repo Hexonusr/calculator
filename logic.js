@@ -1,3 +1,10 @@
+var calculation = "";
+
 function button_name(element){
-    alert("You've pressed" + element.name);
+    calculation += element.name; 
+}
+
+function result(){
+    alert(eval(calculation));
+    calculation = "";
 }
